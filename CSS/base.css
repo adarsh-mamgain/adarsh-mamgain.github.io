@@ -10,15 +10,7 @@ gradient: linear-gradient(to bottom, #6900d3, #f30094, #ff4b58, #ffad3c, #f9f871
 gradient-sec: linear-gradient(to bottom, #6900d3, #5c2ae0, #4b3eeb, #344ff6, #005dff);
 gradient-tert: linear-gradient(to bottom, #6900d3, #8b5ae6, #ae93f3, #d4c9fb, #ffffff);
 */
-body{
-  background-color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-#head{
-  background-color: #B1A8B9;
-}
+
 #nav-img{
   margin-left: 20px;
   width: 100px;
@@ -43,37 +35,15 @@ nav ol li a:hover{
   color: #000000;
   background-color: #b4a2ff;
 }
-a:link{
-  color: #998AB5;
-  text-decoration: none;
-}
-a:visited{
-  color: rgb(195, 0, 255);
-}
-a:hover{
-  color: black;
-}
-a:active{
-  color: #FF0000;
-}
 p, ol, ul{
   /*float: left;
   width: 200px;*/
   color: #000000;
 }
-blockquote{
-  padding: 10px;
-  font-weight: bold;
-  border-left: 4px solid #998AB5;
-  font-style: italic;
-}
-hr{
-  width: 90%;
-}
 #contact{
   text-align: center;
 }
-#circle{
+/*#circle{
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -89,7 +59,7 @@ hr{
   top: -60px;
   left: 30px;
   background-color: #B0B0B0;
-}
+}*/
 footer{
   padding: 0;
   text-align: center;

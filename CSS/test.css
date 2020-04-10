@@ -4,7 +4,7 @@ BRAND-COLOR-SEC: #7BA8C2
 BG-COLOR: #FFFFFF
 TEXT: #000000
 A-LINK: ##B1A8B9
-background-color: #
+footer-color: #EAEAEA
 
 gradient: linear-gradient(to bottom, #6900d3, #0061fc, #008eff, #00b4ff, #00d4ff);
 gradient-prim: linear-gradient(to bottom, #6900d3, #f30094, #ff4b58, #ffad3c, #f9f871);
@@ -17,8 +17,12 @@ body{
 header{
     background-color: #6900D3;
 }
-header img{
-    margin: 0 5px 0 5px;
+#nav-logo a{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+    padding: 0 5px;
+    text-decoration: none;
 }
 header ol{
     position: relative;
@@ -27,14 +31,29 @@ header ol{
 header ol li{
     list-style: none;
 }
-header ol li a:link, a:visited{
+header ol li a:link{
     padding: 5px 5px 5px 5px;
     color: #FFFFFF;
     text-decoration: none;
 }
+header ol li a:visited{
+    color: #FFFFFF;
+}
 header ol li a:hover{
     color: #000000;
+}
+a:link{
+    color: #B1A8B9;
     text-decoration: none;
+}
+a:visited{
+    color: rgb(195, 0, 255);
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: #FF0000;
 }
 #rect{
     margin-left: 20px;
@@ -57,13 +76,17 @@ header ol li a:hover{
     border-radius:50px;
     background: linear-gradient(to bottom, #6900d3, #006aff, #009dff, #00c8ff, #8fecff);
 }
-#a{
-    background-color: #00d4ff;
+blockquote{
+    padding: 10px;
+    font-weight: bold;
+    border-left: 4px solid #B1A8B9;
+    font-style: italic;
 }
-#b{
-    background-color: #8fecff;
+hr{
+    width: 90%;
 }
 footer{
-    background-color: #7BA8C2;
+    font-weight: bold;
+    background-color: #EAEAEA;
     text-align: center;
 }
