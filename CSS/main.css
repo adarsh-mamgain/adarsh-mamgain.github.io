@@ -3,16 +3,20 @@ BRAND-COLOR: #6900D3
 BRAND-COLOR-SEC: #7BA8C2
 BG-COLOR: #FFFFFF
 TEXT: #000000
-A-LINK: ##B1A8B9
+A-LINK, BLOCKQUOTE: ##B1A8B9
 footer-color: #EAEAEA
 
 gradient: linear-gradient(to bottom, #6900d3, #0061fc, #008eff, #00b4ff, #00d4ff);
 gradient-prim: linear-gradient(to bottom, #6900d3, #f30094, #ff4b58, #ffad3c, #f9f871);
 gradient-sec: linear-gradient(to bottom, #6900d3, #8b5ae6, #ae93f3, #d4c9fb, #ffffff);
 */
+html{
+    font-size: 1rem;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 header{
     background-color: #6900D3;
@@ -24,15 +28,12 @@ header{
     padding: 0 5px;
     text-decoration: none;
 }
-header ol{
-    position: relative;
-    align-content: center;
-}
 header ol li{
     list-style: none;
+    display: inline-block;
 }
 header ol li a:link{
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -51,6 +52,9 @@ a:visited{
 }
 a:hover{
     color: black;
+    text-decoration: underline #6900d3;
+    transition: ease-in;
+    transition-duration: 0.5ms;
 }
 a:active{
     color: #FF0000;
