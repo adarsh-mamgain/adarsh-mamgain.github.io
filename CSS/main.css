@@ -18,46 +18,48 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
-header{
-    background-color: #6900D3;
-}
-#nav-logo a{
+#nav-logo{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 90px;
-    padding: 0 5px;
+    font-size: 5.5em;
+    padding: 0 0.25em;
     text-decoration: none;
+    margin-right: auto;
 }
-header ol li{
-    list-style: none;
-    display: inline-block;
+.flex-container{
+    background-color: #6900d3;
+    display: flex;
+    padding-right: 0.25em;
+    justify-content: flex-end;
+    align-items: center;
 }
-header ol li a:link{
-    padding: 5px 5px;
+.flex-container a{
+    padding: 0 1.4em;
+}
+.main{
+    padding: 0 2em;
+}
+header a:link, header a:visited{
+    padding: 0.25em 1em;
+    font-size: 1.1em;
+    font-weight: 500;
     color: #FFFFFF;
     text-decoration: none;
 }
-header ol li a:visited{
-    color: #FFFFFF;
-}
-header ol li a:hover{
+header a:hover, header a:active{
     color: #000000;
 }
-a:link{
+a:link, a:visited{
     color: #B1A8B9;
     text-decoration: none;
 }
-a:visited{
-    color: rgb(195, 0, 255);
-}
-a:hover{
+a:hover, a:active{
     color: black;
-    text-decoration: underline #6900d3;
-    transition: ease-in;
-    transition-duration: 0.5ms;
+    text-decoration: underline #6900d3 ;
+    transition: all 0.1s ease-in 0.02s;
 }
-a:active{
-    color: #FF0000;
+p{
+    padding: 0.5em 0;
 }
 #rect{
     margin-left: 20px;
@@ -91,6 +93,18 @@ hr{
 }
 footer{
     font-weight: bold;
+    padding: 1em 0 2em 0;
     background-color: #EAEAEA;
     text-align: center;
+}
+footer a:link, footer a:visited{
+    color: #000000;
+    padding: 0 1em;
+}
+footer a svg:hover, footer a svg:active{
+    color: #6900d3;
+    transform: translateY(-3px);
+}
+a svg{
+    transition: all 0.1s ease-in 0.02s;
 }
