@@ -49,6 +49,21 @@ header a:link, header a:visited{
 header a:hover, header a:active{
     color: #000000;
 }
+@media screen and (max-width: 510px){
+    header a:link, header a:hover{
+        font-size: 1em;
+        padding: 0.25em 0.4em;
+    }
+}
+@media screen and (max-width: 370px){
+    .flex-container{
+        font-size: 1em;
+        flex-direction: column;
+    }
+    #nav-logo{
+        margin: auto;
+    }
+}
 a:link, a:visited{
     color: #B1A8B9;
     text-decoration: none;
