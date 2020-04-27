@@ -49,6 +49,21 @@ header a:link, header a:visited{
 header a:hover, header a:active{
     color: #000000;
 }
+@media screen and (max-width: 510px){
+    header a:link, header a:hover{
+        font-size: 1em;
+        padding: 0.25em 0.4em;
+    }
+}
+@media screen and (max-width: 370px){
+    .flex-container{
+        font-size: 1em;
+        flex-direction: column;
+    }
+    #nav-logo{
+        margin: auto;
+    }
+}
 a:link, a:visited{
     color: #B1A8B9;
     text-decoration: none;
@@ -62,21 +77,18 @@ p{
     padding: 0.5em 0;
 }
 #rect{
-    margin-left: 20px;
     width: 100px;
     height: 100px;
     border-radius:50px;
     background: linear-gradient(to bottom, #6900d3, #f30094, #ff4b58, #ffad3c, #f9f871);
 }
 #tria{
-    margin-left: 20px;
     width: 100px;
     height: 100px;
     border-radius:50px;
     background: linear-gradient(to bottom, #6900d3, #0061fc, #008eff, #00b4ff, #00d4ff);
 }
 #squa{
-    margin-left: 20px;
     width: 100px;
     height: 100px;
     border-radius:50px;
@@ -101,10 +113,8 @@ footer a:link, footer a:visited{
     color: #000000;
     padding: 0 1em;
 }
-footer a svg:hover, footer a svg:active{
+footer a i:hover, footer a i:active{
     color: #6900d3;
     transform: translateY(-3px);
-}
-a svg{
     transition: all 0.1s ease-in 0.02s;
 }
