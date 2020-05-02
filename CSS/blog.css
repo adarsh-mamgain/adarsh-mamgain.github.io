@@ -1,0 +1,12 @@
+p{
+  padding: 0.5em 0;
+}
+blockquote{
+  padding: 10px;
+  font-weight: bold;
+  border-left: 4px solid #B1A8B9;
+  font-style: italic;
+}
+hr{
+  width: 90%;
+}

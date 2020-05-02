@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+body{
+  background-color: #1b1b1b;  
+}
+.container{
+  margin: auto;
+  padding: 20px 0;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 300px;
+}
+@media screen and (min-width: 600px){
+  .container{
+    grid-template-columns: 300px 300px;
+  }
+  #card1{
+    grid-column: none;
+    grid-column: 1 / 3;
+  }
+  #card2{
+    border-bottom-left-radius: 10px;
+  }
+  #card3{
+    border-bottom-right-radius: 10px;
+  }
+}
+.container div{
+  padding: 25px;
+}
+#card1{
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+#card1 h2{
+  color: #00b3c0;
+}
+.color1{
+  font-weight: 700;
+  color: #abd31a;
+}
+.color2{
+  color: #adadad;
+}
+#card2{
+  color: white;
+  background-color: #00b3c0;
+}
+#dollar{
+  font-size: 30px;
+  font-weight: 700;
+}
+#dollar1{
+  color: #e7e7e7;
+  padding: 0 10px;
+}
+#subscribe{
+  width: 100%;
+  height: 50px;
+  margin-top: 28px;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #cfff20;
+  box-shadow: 10px 0 solid 10px grey;
+}
+#subscribe:hover{
+  box-shadow: #b0b0b0;
+  opacity: 0.95;
+  font-size: 18px;
+  animation: color 0.1s ease-out 0.01s 1 normal forwards;
+}
+@keyframes color{
+  0% {background-color: #cfff20;}
+  100% {background-color: #ffbb00;}
+}
+#card3{
+  color: white;
+  background-color: #65cdd4;
+}
+@media screen and (max-width: 599px){
+  #card3{
+    border-radius: 0 0 10px 10px;
+  }
+}
+#card3 p{
+  color: #f0f0f0;
+}
+.attribution{
+  text-align: center;
+  padding: 10px 0;
+  color: #919191;
+}
+.attribution a:link, .attribution a:visited{
+  color: #6900d3;
+  text-decoration: none;
+}
+.attribution a:hover, .attribution a:active{
+  color: #919191;
+  border-bottom: 2px solid #6900d3;
+  transition: all 0.1s ease-in 0.02s;
+}
+.back{
+  width: 60px;
+  height: 60px;
+  position: sticky;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(180%);
+  color: white;
+  border: none;
+  background-color: #6900d3;
+  border-radius: 30px 5px 30px 30px;
+  box-shadow: 1px 1px 10px white;
+}
+.back:hover{
+  box-shadow: 1px 1px 5px white;
+}
+.fas{
+  font-size: 20px;
+  color: white;
+}
