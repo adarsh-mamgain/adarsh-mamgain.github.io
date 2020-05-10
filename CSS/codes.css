@@ -1,28 +1,9 @@
-/*.info{
-  display: grid;
-  background-color: #f3f3f3;
-  grid-template-columns: auto 500px;
+*{
+  box-sizing: border-box;
 }
-.info div:first-child{
-  padding: 0 10px;
+h1{
+  margin-left: 10px;
 }
-.info .even{
-  padding: 10px;
-  width: fit-content;
-  background-color: orange;
-  border-radius: 10px;
-}
-.info .odd{
-  padding: 10px;
-  width: fit-content;
-  justify-self: end;
-  background-color: green;
-  border-radius: 10px;
-}
-.head-img{
-  width: 500px;
-  height: ;
-}*/
 .codes{
   display: grid;
   grid-row-gap: 10px;
@@ -36,16 +17,22 @@
     grid-template-columns: 300px 300px;
     grid-column-gap: 10px;
   }
-}/*
+  h1{
+    grid-column: 1 / span 2;
+  }
+}
 @media screen and (min-width: 940px){
   .codes{
     grid-template-columns: 300px 300px 300px;
   }
-}*/
+  h1{
+    grid-column: 1 / span 3;
+  }
+}
 .codes div{
   border-radius: 10px;
-  padding: 0 20px 20px ;
-  background-color: hsla(253, 86%, 89%, 0.5);
+  padding: 0 20px 20px 20px;
+  background-color: #d5cbfb80;
 }
 .codes p{
   color: #808080;
@@ -58,4 +45,9 @@
 }
 .codes img:hover, .codes img:active{
   box-shadow: 0 1px 5px black;
+}
+#three img{
+  background-color: #674bb1;
+  background-image: url(/Images/bg-mobile.svg);
+  background-size: cover;
 }
