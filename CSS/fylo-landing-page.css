@@ -1,0 +1,225 @@
+*{
+  box-sizing: border-box;
+}
+nav{
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+nav{
+  display: flex;
+  margin: 20px 10px;
+  justify-content: flex-end;
+}
+nav img{
+  height: 35px;
+  margin-right: auto;
+}
+nav li{
+  margin: auto 0;
+  padding: 10px;
+  list-style: none;
+}
+@media screen and (max-width: 354px){
+  nav li{
+    padding: 4px;
+  }
+}
+nav a:link, nav a:visited{
+  color: black;
+  text-decoration: none;
+}
+div img{
+  width: 100%;
+  height: auto;
+}
+.one, .two, .three, .four{
+  display: grid;
+  padding: 80px 0;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 320px;
+}
+input, button{
+  width: 100%;
+  height: 55px;
+  margin: 10px 0;
+  padding: 16px 25px;
+  border-radius: 5px;
+}
+button{
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #3065f8;
+}
+.bg{
+  height: 200px;
+  background: url(/Images/bg-curve-mobile.svg) no-repeat 50% 50%;
+  background-size: cover;
+}
+@media screen and (min-width: 1050px) and (max-width: 1440px){
+  nav{
+    margin: 20px auto;
+    width: 1050px;
+  }
+  .one, .two, .three, .four{
+    text-align: left;
+    padding: 50px 50px;
+    column-gap: 50px;
+    grid-template-columns: 500px 500px;
+  }
+  .one .illu{
+    height: 377.14px;
+    grid-column: 2;
+    grid-row: 1/ span 4;
+    align-self: center;
+  }
+  .one .form input{
+    width: 275px;
+    float: left;
+  }
+  .one .form button{
+    width: 175px;
+    margin: 10px 25px;
+  }
+  .bg{
+    background: url(/Images/bg-curve-desktop.svg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .two h3{
+    font-size: 31px;
+  }
+  .two .illu{
+    grid-column: 2;
+    grid-row: 1/ span 5;
+    align-self: center;
+  }
+  .two .attr{
+    width: 60%;
+    grid-row: 5;
+  }
+  .two #margin{
+    text-align: start;
+  }
+  .three p{
+    grid-column: 1;
+  }
+  .three input{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .three .form{
+    grid-column: 2;
+    grid-row: 1/ span 2;
+  }
+  .three .form button{
+    width: fit-content;
+  }
+  .four{
+    grid-template-columns: auto auto auto auto;
+  }
+  .four img:first-child{
+    grid-column: 1/ span 3;
+  }
+  .four .attribution{
+    margin-top: 20px;
+    grid-column: 1/ span 4;
+    justify-self: center;
+  }
+}
+.two{
+  padding-top: 0;
+  background-color: #f8f8fe;
+}
+.two p, .attr{
+  text-align: left;
+}
+.two #margin{
+  width: fit-content;
+  color: #3c9f8f;
+  padding: 10px;
+  margin: 10px 0;
+  line-height: 26px;
+  vertical-align: sub;
+  justify-self: center;
+  border-bottom: 1px solid #3c9f8f;
+}
+.two #margin img{
+  width: 26px;
+  vertical-align: middle;
+}
+.two .attr{
+  width: 85%;
+  font-size: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  justify-self: center;
+  box-shadow: 0 1px 10px grey;
+  background-color: white;
+}
+.two .attr img{
+  float: left;
+  margin: 4px 8px 4px 0;
+  border-radius: 16px;
+}
+.two #big{
+  font-weight: bolder;
+}
+.two #small{
+  font-size: 10px;
+}
+.three{
+  color: white;
+  background-color: #585989;
+}
+.three input, .three button{
+  width: 90%;
+  margin: 10px auto;
+}
+.four{
+  color: white;
+  text-align: left;
+  background-color: #070439;
+}
+.four .fylo-logo{
+  width: 150px;
+}
+.four .icon{
+  width: 30px;
+  padding-right: 10px;
+}
+.four p{
+  padding: 10px 0;
+}
+.social{
+  padding: 20px;
+  justify-self: center;
+}
+.social a:link{
+  padding: 10px;
+}
+.social .fab{
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  color: white;
+  border-radius: 19px;
+  border: 1px solid white;;
+}
+.attribution{
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a:link, .attribution a:visited{
+  color: #636363;
+  text-decoration: none;
+}
+.attribution a:hover, .attribution a:active{
+  color: #ffffff;
+  border-bottom: 2px solid #6900d3;
+  transition: all 0.1s ease-in 0.02s;
+}

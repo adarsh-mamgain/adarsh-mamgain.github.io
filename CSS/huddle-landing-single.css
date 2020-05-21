@@ -93,8 +93,9 @@ button:active{
   50% {background: #9a9bbf; color: #9388a8;}
   100% {background: #244483; color: #ffffff;}
 }
-.social a{
+.social a:link{
   padding: 10px;
+  color: white;
 }
 .social .fab{
   width: 38px;
