@@ -1,75 +1,77 @@
-*{
+* {
   box-sizing: border-box;
   margin: none;
   color: white;
 }
-body{
+body {
   margin: 0;
   background-color: #674bb1;
   background-image: url(/Images/bg-mobile.svg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-h1{
+h1 {
   font-size: 28px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-P{
+P {
   color: #eeeeee;
 }
-.container{
+.container {
   display: grid;
   position: relative;
   justify-content: center;
   grid-template-columns: 320px;
   row-gap: 40px;
 }
-#logo img{
+#logo img {
   width: 200px;
 }
-#mockup img{
+#mockup img {
   width: 100%;
 }
-@media screen and (max-width: 1099px){
-  .container{
+@media screen and (max-width: 1099px) {
+  .container {
     margin: 30px 0;
   }
-  button{
+  button {
     display: block;
     margin: auto;
   }
-  h1, p, .social{
+  h1,
+  p,
+  .social {
     text-align: center;
   }
 }
-@media screen and (min-width: 1100px){
-  body{
+@media screen and (min-width: 1200px) {
+  body {
     background-image: url(/Images/bg-desktop.svg);
   }
-  .container{
+  .container {
     padding: 15px 30px 30px 25px;
     column-gap: 100px;
     row-gap: 20px;
     grid-template-columns: 600px 500px;
   }
-  div #logo{
+  div #logo {
     grid-column: 1 / span 2;
   }
-  .social{
-  justify-self: end;
-  grid-column: 1 / span 2;
+  .social {
+    justify-self: end;
+    grid-column: 1 / span 2;
   }
-  h1{
+  h1 {
     font-size: 31px;
     text-align: left;
   }
-  P{
+  P {
     text-align: left;
   }
 }
-button{
+button {
   width: 200px;
   height: 50px;
   padding: 10px;
@@ -81,38 +83,49 @@ button{
   background-color: white;
   box-shadow: 0 1px 15px #381d53;
 }
-button:hover{
+button:hover {
   box-shadow: none;
   animation: button 0.1s ease-in 0.01s 1 normal forwards;
 }
-button:active{
+button:active {
   border: 2px solid white;
 }
-@keyframes button{
-  0% {background: #ffffff; color: #381d53;}
-  50% {background: #9a9bbf; color: #9388a8;}
-  100% {background: #244483; color: #ffffff;}
+@keyframes button {
+  0% {
+    background: #ffffff;
+    color: #381d53;
+  }
+  50% {
+    background: #9a9bbf;
+    color: #9388a8;
+  }
+  100% {
+    background: #244483;
+    color: #ffffff;
+  }
 }
-.social a:link{
+.social a:link {
   padding: 10px;
   color: white;
 }
-.social .fab{
+.social .fab {
   width: 38px;
   height: 38px;
   padding: 10px;
   border-radius: 19px;
-  border: 1px solid white;;
+  border: 1px solid white;
 }
-.attribution{
+.attribution {
   text-align: center;
   color: #ffffff;
 }
-.attribution a:link, .attribution a:visited{
+.attribution a:link,
+.attribution a:visited {
   color: #cecece;
   text-decoration: none;
 }
-.attribution a:hover, .attribution a:active{
+.attribution a:hover,
+.attribution a:active {
   color: #ffffff;
   border-bottom: 2px solid #6900d3;
   transition: all 0.1s ease-in 0.02s;
