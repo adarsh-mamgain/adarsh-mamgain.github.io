@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 15px;
+  background-image: url("/Images/bg-pattern-top-desktop.svg"), url("/Images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, right bottom;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.dark {
+  margin: 20px;
+  font-weight: 700;
+}
+
+#one {
+  margin: 100px 0 50px 0;
+  display: grid;
+  grid-template-columns: 450px 600px;
+  justify-content: center;
+  align-items: center;
+  color: #502050;
+  column-gap: 100px;
+  vertical-align: middle;
+}
+
+#one img {
+  padding: 0 5px;
+}
+
+#one span {
+  margin: 0 20px;
+}
+
+#one .star {
+  width: 470px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #f7f2f7;
+}
+
+#one .second {
+  position: relative;
+  left: 20px;
+}
+
+#one .third {
+  position: relative;
+  left: 40px;
+}
+
+#two {
+  display: grid;
+  margin: 100px 0;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+#two .box {
+  width: 350px;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  background-color: #502050;
+}
+
+#two .box:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+
+#two .box:nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+
+#two .box .top {
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+}
+
+#two .box .top .name {
+  font-weight: 700;
+}
+
+#two .box .top .verify {
+  color: #ee68a4;
+}
+
+#two .box img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    background-image: url("/Images/bg-pattern-top-mobile.svg"), url("/Images/bg-pattern-bottom-mobile.svg");
+    background-position: 0 0, bottom;
+    background-size: auto, contain;
+  }
+  #one {
+    text-align: center;
+    grid-template-columns: 320px;
+  }
+  #one .star {
+    width: inherit;
+    padding: 20px 2px;
+  }
+  #one .star span {
+    display: block;
+  }
+  #two {
+    grid-template-columns: 310px;
+  }
+  #two .box {
+    width: 300px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: #757575;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  font-weight: 700;
+  color: #6900d3;
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: #757575;
+  border-bottom: 2px solid #6900d3;
+  transition: all 0.1s ease-in 0.02s;
+}
