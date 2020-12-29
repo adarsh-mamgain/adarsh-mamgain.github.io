@@ -4,4 +4,4 @@ My website. I am Adarsh Mamgain a **NOOBIE** currently trying to build a fronten
 
 ### SOCIAL ACCOUNTS ###
 
-[Instagram](www.instagram.com/_.mangya._) [Twitter](www.twitter.com/Adarsh_Mamgain) 
+[Instagram](www.instagram.com/_adarsh_mamgain_) [Twitter](www.twitter.com/Adarsh_Mamgain) 

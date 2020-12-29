@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./CSS"
+        }
+    ]
+}
