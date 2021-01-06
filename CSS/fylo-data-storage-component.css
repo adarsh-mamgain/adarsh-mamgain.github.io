@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: url("/Images/bg-desktop.png") no-repeat;
+  background-attachment: fixed;
+  background-color: #0c122c;
+  background-position: center bottom;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: grid;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: end;
+  grid-template-columns: 350px 550px;
+}
+
+#container #one,
+#container #two {
+  padding: 40px;
+  background-color: #1d2c67;
+}
+
+#container #one {
+  border-radius: 10px 120px 10px 10px;
+}
+
+#container #one div:nth-child(2) {
+  display: grid;
+  column-gap: 20px;
+  padding-top: 30px;
+  grid-template-columns: 50px 50px 50px;
+}
+
+#container #one div:nth-child(2) div {
+  height: 50px;
+  padding: 5px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #0c122c;
+}
+
+#container #one div:nth-child(2) div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container #two {
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+
+#container #two #top {
+  position: absolute;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  background-color: white;
+}
+
+#container #two #top #big {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0c122c;
+}
+
+#container #two #top #small {
+  top: -5px;
+  position: relative;
+  font-weight: 700;
+  color: #848794;
+}
+
+#container #two #bold {
+  font-weight: 700;
+}
+
+#container #two #progress {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #0c122c;
+}
+
+#container #two #progress #progress-in {
+  width: 81.5%;
+  height: 70%;
+  margin: auto 4px;
+  border-radius: 8px;
+  position: relative;
+  animation: transWidth 2s ease-out 1 normal forwards;
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+#container #two #progress #progress-in #circle {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: white;
+}
+
+#container #two #flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#container #two #flex span {
+  padding-top: 10px;
+}
+
+@keyframes transWidth {
+  0% {
+    width: 0;
+  }
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: #636363;
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: #ffffff;
+  border-bottom: 2px solid #6900d3;
+  transition: all 0.1s ease-in 0.02s;
+}
+
+@media screen and (min-width: 1000px) {
+  #top {
+    top: -55px;
+    right: 40px;
+  }
+  #top #triangle {
+    border-right: 22px solid white;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    position: absolute;
+    top: 65px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #container {
+    row-gap: 20px;
+    grid-template-columns: 300px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: url("/Images/bg-mobile.png") no-repeat;
+    background-size: cover;
+    background-color: #0c122c;
+    background-position: center;
+  }
+  #top {
+    top: 150px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
