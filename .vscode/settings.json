@@ -6,7 +6,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "./CSS"
+            "savePath": "/CSS"
         }
     ]
 }

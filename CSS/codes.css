@@ -46,8 +46,3 @@ h1{
 .codes img:hover, .codes img:active{
   box-shadow: 0 1px 5px black;
 }
-#three img{
-  background-color: #674bb1;
-  background-image: url(/Images/bg-mobile.svg);
-  background-size: cover;
-}
