@@ -73,7 +73,7 @@ body {
   position: absolute;
   border-radius: 10px;
   padding: 20px;
-  width: fit-content;
+  width: 175px;
   background-color: white;
 }
 
@@ -139,11 +139,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  padding: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: #ffffff;
 }
