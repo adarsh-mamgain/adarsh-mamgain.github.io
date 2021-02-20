@@ -1,0 +1,148 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.wrapper {
+  background-image: linear-gradient(#af67e9, #6565e7);
+}
+
+.container {
+  width: max-content;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  grid-template-columns: 500px 450px;
+}
+
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container #hr {
+  margin: 0;
+}
+
+.container .active {
+  display: none;
+}
+
+.container .bold {
+  font-weight: bold;
+}
+
+.container .rotate {
+  transform: rotateX(180deg);
+}
+
+.container .text {
+  padding: 5px 0;
+}
+
+.container .text:hover {
+  cursor: pointer;
+}
+
+.container .text:hover p {
+  color: #f47c57;
+}
+
+@media screen and (min-width: 1001px) {
+  #img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: -70px center, -570px -300px;
+    background-image: url("/Images%20JS/illustration-woman-online-desktop.svg"), url("/Images%20JS/bg-pattern-desktop.svg");
+  }
+  #box {
+    transform: translate(-100px, 120%);
+  }
+  .div {
+    padding: 50px 100px 50px 0;
+  }
+  p {
+    font-size: 16px;
+  }
+  span {
+    font-size: 14px;
+    color: #787887;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    overflow: visible;
+  }
+  .container {
+    width: max-content;
+    display: grid;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    grid-template-columns: 320px;
+  }
+  .container #img {
+    height: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/Images%20JS/bg-pattern-mobile.svg");
+  }
+  .container #img #hidden {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+  h1 {
+    text-align: center;
+  }
+  #box {
+    display: none;
+  }
+  .div {
+    position: relative;
+    padding: 0 20px 50px;
+  }
+  p {
+    font-size: 14px;
+  }
+  span {
+    font-size: 12px;
+    color: #787887;
+  }
+}
+
+.attribution {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: #fff;
+  border-bottom: 2px solid #000;
+  transition: all 0.1s ease-in 0.02s;
+}
