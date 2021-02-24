@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: #ecf2f8;
+}
+
+.container {
+  height: 85%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 250px 400px;
+}
+
+.container .one {
+  height: 250px;
+  border-radius: 10px 0 0 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/Images%20JS/drawers.jpg");
+}
+
+.container .two {
+  position: relative;
+  height: 250px;
+  padding: 30px;
+  color: #48556a;
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+}
+
+.container .two h1 {
+  font-size: 20px;
+}
+
+.container .two #description {
+  font-size: 12px;
+  padding: 10px 0 10px 0;
+  color: #6d7f97;
+}
+
+.container .two .bottom {
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: 60px auto;
+  align-items: center;
+}
+
+.container .two .bottom .name {
+  font-weight: 700;
+  color: #48556a;
+}
+
+.container .two .bottom .date {
+  color: #9eafc2;
+}
+
+.container .two .bottom img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container .two .bottom div span {
+  display: block;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share .share-button {
+  z-index: 1;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #ecf2f8;
+}
+
+.share .share-button:hover {
+  background-color: #6d7f97;
+}
+
+.share .share-button:hover i {
+  color: white;
+}
+
+.share .share-button i {
+  color: #6d7f97;
+  transform: translateY(-3px);
+  animation: move 1s infinite linear;
+}
+
+@media screen and (min-width: 750px) {
+  .mobile-show {
+    display: none !important;
+  }
+  .show {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 90px;
+    right: -35px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #48556a;
+  }
+  .show::after {
+    position: absolute;
+    content: "";
+    bottom: -35px;
+    left: 50%;
+    border: 20px solid transparent;
+    border-top-color: #48556a;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: 20px;
+  }
+  .show span {
+    font-size: 12px;
+  }
+  .show span,
+  .show i {
+    color: white;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .container {
+    height: auto;
+    grid-template-columns: 320px;
+  }
+  .container .one {
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+  }
+  .container .two {
+    height: 306px;
+    border-radius: 0 0 10px 10px;
+  }
+  .container .share {
+    padding-top: 20px;
+  }
+  .container .mobile-show {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    width: 320px;
+    height: 70px;
+    background-color: #48556a;
+  }
+  .container .mobile-show span {
+    font-size: 12px;
+  }
+  .container .mobile-show span,
+  .container .mobile-show i {
+    color: white;
+    padding: 15px;
+  }
+  .show {
+    display: none !important;
+  }
+}
+
+.fa-spin {
+  animation: move 3s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.attribution {
+  padding: 20px;
+  text-align: center;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: #6900d3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  color: #000;
+  border-bottom: 2px solid #6900d3;
+  transition: all 0.1s ease-in 0.02s;
+}
