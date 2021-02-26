@@ -4,7 +4,7 @@
 h1{
   margin-left: 10px;
 }
-.codes{
+.codes, .codes-js{
   display: grid;
   grid-row-gap: 10px;
   padding: 10px;
@@ -13,7 +13,7 @@ h1{
   grid-template-columns: 300px;
 }
 @media screen and (min-width: 630px){
-  .codes{
+  .codes, .codes-js{
     grid-template-columns: 300px 300px;
     grid-column-gap: 10px;
   }
@@ -22,7 +22,7 @@ h1{
   }
 }
 @media screen and (min-width: 940px){
-  .codes{
+  .codes, .codes-js{
     grid-template-columns: 300px 300px 300px;
   }
   h1{
@@ -34,15 +34,20 @@ h1{
   padding: 0 20px 20px 20px;
   background-color: #d5cbfb80;
 }
-.codes p{
+.codes-js div{
+  border-radius: 10px;
+  padding: 0 20px 20px 20px;
+  background-color: #fbcbf980;
+}
+.codes p, .codes-js p{
   color: #808080;
 }
-.codes img{
+.codes img, .codes-js img{
   width: 260px;
   height: 205px;
   border-radius: 10px;
   box-shadow: 0 2px 10px black;
 }
-.codes img:hover, .codes img:active{
+.codes img:hover, .codes img:active, .codes-js img:hover, .codes-js img:active{
   box-shadow: 0 1px 5px black;
 }
