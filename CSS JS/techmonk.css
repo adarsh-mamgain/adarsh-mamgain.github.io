@@ -274,11 +274,11 @@ main .section-6 .sign-up input {
     opacity: 0;
     width: 100%;
     height: 728px;
-    background: url("/public/section-1.svg") no-repeat center center;
+    background: url("/Images JS/section-1.svg") no-repeat center center;
     animation: fadeUP 0.8s ease-in-out 6s forwards;
   }
   .section-2 {
-    background: url("/public/section-2.svg") no-repeat;
+    background: url("/Images JS/section-2.svg") no-repeat;
     background-position: center center;
     background-size: contain;
   }
@@ -297,12 +297,12 @@ main .section-6 .sign-up input {
   .section-3 #bgFadeUP-2 {
     width: 100%;
     height: 584px;
-    background: url("/public/section-3a.svg") no-repeat center center;
+    background: url("/Images JS/section-3a.svg") no-repeat center center;
   }
   .section-3 #bgFadeUP-3 {
     width: 100%;
     height: 584px;
-    background: url("/public/section-3b.svg") no-repeat center center;
+    background: url("/Images JS/section-3b.svg") no-repeat center center;
   }
   .section-3 .hovered-1 {
     animation: fadeUP 0.3s linear 0.1s forwards;
