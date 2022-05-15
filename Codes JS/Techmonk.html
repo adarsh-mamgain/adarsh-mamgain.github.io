@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmonk</title>
+    <link rel="stylesheet" href="/Images JS/styles.css" />
+    <link
+      href="https://api.fontshare.com/css?f[]=satoshi@300,500,700&f[]=general-sans@300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body id="body" class="bg-[#f5f5f5]">
+    <div>
+      <section class="loader lg:block">
+        <div
+          id="counter"
+          class="flex flex-row text-[#233223] text-6xl font-bold animated"
+        >
+          <ul class="digits luckie1">
+            <li class="opacity-0">0</li>
+            <li>1</li>
+          </ul>
+          <ul class="digits luckie2">
+            <li class="opacity-0">0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>0</li>
+          </ul>
+          <ul class="digits luckie3">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>0</li>
+          </ul>
+        </div>
+      </section>
+      <div class="lg:my-10 my-5">
+        <header class="div">
+          <nav class="flex flex-row justify-between items-center px-5 lg:px-32">
+            <div class="basis-1/6">
+              <img src="/Images JS/logo1.svg" alt="logo" />
+            </div>
+            <div class="basis-5/6">
+              <div class="lg:hidden flex flex-row justify-end items-center">
+                <nav class="menu top-[-20px]">
+                  <div
+                    id="menu-content"
+                    class="bg-black text-white text-2xl p-5"
+                  >
+                    <div class="h-[100%] flex flex-col gap-48 justify-end">
+                      <div class="flex flex-col gap-5 text-center">
+                        <img
+                          class="w-[38px] m-auto"
+                          src="/Images JS/logo2.svg"
+                          alt="logo"
+                        />
+                        <p class="tracking-[-0.03em] opacity-50 font-normal">
+                          Drive new customers with beautiful and powerful
+                          reviews
+                        </p>
+                      </div>
+                      <div class="w-[100%] flex flex-col gap-12 items-end">
+                        <div class="flex flex-row gap-2.5 font-medium">
+                          <span>Integrations</span>
+                          <img
+                            src="/Images JS/arrow-up-right.svg"
+                            alt="arrow-up-right"
+                          />
+                        </div>
+                        <div class="flex flex-row gap-2.5 font-medium">
+                          <span>Pricing</span>
+                          <img
+                            src="/Images JS/arrow-up-right.svg"
+                            alt="arrow-up-right"
+                          />
+                        </div>
+                        <div class="flex flex-row gap-2.5 font-medium">
+                          <span>Login</span>
+                          <img
+                            src="/Images JS/arrow-up-right.svg"
+                            alt="arrow-up-right"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+                <div class="menu-box">
+                  <input type="checkbox" onchange="handleCheck(this)" />
+                  <span class="menu-lines line1"></span>
+                  <span class="menu-lines line2"></span>
+                  <span class="menu-lines line3"></span>
+                </div>
+              </div>
+              <div class="hidden lg:flex flex-row justify-end items-center">
+                <span class="mx-10 my-1 p-1">Integrations</span>
+                <span class="mx-10 my-1 p-1">Pricing</span>
+                <span class="mx-10 my-1 p-1">Login</span>
+                <button
+                  class="green-button bg-[#11C770] ml-10 text-white px-5 py-3 rounded-md"
+                >
+                  Connect Your Shopify Store
+                </button>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div
+            class="section-1 relative flex flex-col justify-between items-center gap-10 text-center px-5 lg:px-32 py-20 lg:py-36"
+          >
+            <div id="bgFadeUP-1" class="absolute top-0 left-0"></div>
+            <div class="lg:w-9/12">
+              <h1 class="font-semibold tracking-[-0.03em]">
+                <span class="text-[#11C770]">Powerful Reviews</span> to enhance
+                your Store Experience
+              </h1>
+              <p class="font-normal my-5">
+                Connect boosts your brand's ability to maintain relationships<br />
+                with customers post-purchase, converse with customers
+              </p>
+            </div>
+            <div class="fadeUP font-normal my-4">
+              <span>Connecting With:</span>
+              <div class="flex flex-row justify-content items-center gap-5 m-2">
+                <img src="/Images JS/shopify.svg" alt="shopify" />
+                <img src="/Images JS/woo-commerce.svg" alt="woo-commerce" />
+                <img src="/Images JS/magento.svg" alt="magento" />
+              </div>
+            </div>
+            <div class="component-1 bottom-32 hidden lg:block absolute">
+              <div
+                class="dots absolute right-0 flex flex-row bg-white gap-2 p-3 rounded-full rounded-tr-md"
+              >
+                <div class="one dot w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="two dot w-3 h-3 bg-gray-500 rounded-full"></div>
+                <div class="three dot w-3 h-3 bg-gray-400 rounded-full"></div>
+              </div>
+              <img src="/Images JS/component-x.svg" alt="" />
+            </div>
+            <div class="component-2 bottom-5 hidden lg:block absolute">
+              <div
+                class="dots absolute flex flex-row bg-white gap-2 p-3 rounded-full rounded-tl-md"
+              >
+                <div class="one dot w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="two dot w-3 h-3 bg-gray-500 rounded-full"></div>
+                <div class="three dot w-3 h-3 bg-gray-400 rounded-full"></div>
+              </div>
+              <img src="/Images JS/component-y.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="section-2 flex flex-col justify-between items-center relative gap-10 lg:gap-20 px-5 lg:px-32 py-20 lg:py-40"
+          >
+            <div class="hidden lg:block speaking absolute top-28">
+              <img src="/Images JS/speaking.svg" alt="logo" />
+            </div>
+            <div class="lg:w-[450px] text-center">
+              <h2 class="font-semibold tracking-[-0.03em]">
+                Connect helps you go
+                <span class="text-[#11C770]">from selling products</span> to
+              </h2>
+            </div>
+            <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 font-medium">
+              <div
+                class="flex flex-col gap-4 lg:gap-6 lg:w-84 bg-white text-xl rounded-xl p-8"
+              >
+                <img width="40px" src="/Images JS/pet.svg" alt="pet" />
+                <span>Building Brand Loyalty</span>
+              </div>
+              <div
+                class="flex flex-col gap-4 lg:gap-6 lg:w-84 bg-white text-xl rounded-xl p-8"
+              >
+                <img width="40px" src="/Images JS/people.svg" alt="people" />
+                <span>Building Value and Relationships</span>
+              </div>
+              <div
+                class="flex flex-col gap-4 lg:gap-6 lg:w-84 bg-white text-xl rounded-xl p-8"
+              >
+                <img width="40px" src="/Images JS/convert.svg" alt="convert" />
+                <span>Increasing Conversion Rate</span>
+              </div>
+              <div
+                class="flex flex-col gap-4 lg:gap-6 lg:w-84 bg-white text-xl rounded-xl p-8"
+              >
+                <img width="40px" src="/Images JS/dollar-circle.svg" alt="dollar" />
+                <span>Incentivizing Users</span>
+              </div>
+            </div>
+          </div>
+          <div
+            id="section-3-hover"
+            class="section-3 relative flex flex-col justify-between items-center gap-20 text-center px-5 lg:px-32 py-10 lg:py-60"
+          >
+            <div id="bgFadeUP-2" class="absolute top-0 left-0"></div>
+            <div id="bgFadeUP-3" class="absolute top-0 left-0"></div>
+            <div class="font-semibold lg:w-7/12">
+              <h3 class="lg:text-3xl tracking-[-0.03em]">
+                There are various apps which provide photo and video review
+                solutions
+              </h3>
+              <p class="text-xl lg:text-2xl my-5">but...</p>
+              <img
+                class="lg:hidden py-5 m-auto"
+                src="/Images JS/component-4.svg"
+                alt="component-4"
+              />
+            </div>
+          </div>
+          <div
+            class="section-4 flex flex-col justify-between items-center gap-14 px-5 lg:px-32 pt-28 lg:pt-40 pb-20"
+          >
+            <h1
+              class="text-center text-2xl md:text-6xl font-semibold tracking-[-0.03em]"
+            >
+              With Connect
+              <img class="w-6 lg:w-10" src="/Images JS/logo1.svg" alt="logo" />
+              <span class="text-[#11C770]">you can have</span>
+            </h1>
+            <div class="grid gap-4 grid-cols-1 lg:grid-cols-3">
+              <div class="flex flex-col gap-4 bg-white rounded-lg p-7">
+                <img width="40px" src="/Images JS/pet.svg" alt="pet" />
+                <h3 class="text-lg lg:text-xl font-medium">Customizability</h3>
+                <p class="text-sm font-normal leading-loose opacity-70">
+                  Connect provides some level of customization but we provide
+                  full customization on the look and feel of our widgets and
+                  emails. You can customize it as per your requirements which
+                  resonates with your brand and your audience.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 bg-white rounded-lg p-7">
+                <img
+                  width="40px"
+                  src="/Images JS/cross-platform.svg"
+                  alt="cross-platform"
+                />
+                <h3 class="text-lg lg:text-xl font-medium">
+                  Cross Platform <span class="opacity-30">(Coming Soon)</span>
+                </h3>
+                <p class="text-sm font-normal leading-loose opacity-70">
+                  Most of our competitors only stick to one platform, whereas we
+                  aim to provide cross platform solutions which supports all the
+                  major ecommerce platforms like Shopify, Magento, Woocommerce,
+                  Bigcommerce, etc.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 bg-white rounded-lg p-7">
+                <img
+                  width="40px"
+                  src="/Images JS/deep-learning.svg"
+                  alt="deep-learning"
+                />
+                <h3 class="text-lg lg:text-xl font-medium">
+                  Deep learning <span class="opacity-30">(Coming Soon)</span>
+                </h3>
+                <p class="text-sm font-normal leading-loose opacity-70">
+                  You will have seen AI based profanity filters written on most
+                  of our competitors' sites, but those are just rule based AI
+                  algorithms which don't really provide much value.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-5 flex flex-col gap-12 lg:gap-14 bg-[#eceeee] px-5 lg:px-32 pb-10"
+          >
+            <div
+              class="flex flex-col items-start lg:justify-center lg:flex-row gap-12 lg:gap-24 text-xl font-medium"
+            >
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/high.svg" alt="high" />
+                High Email Open Rate
+              </span>
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/repeat.svg" alt="repeat" />
+                Review Social Share
+              </span>
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/danger.svg" alt="danger" />
+                Auto Review with AI
+              </span>
+            </div>
+            <div
+              class="flex flex-col items-start lg:justify-center lg:flex-row gap-12 lg:gap-24 text-xl font-medium"
+            >
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/widget.svg" alt="widget" />
+                Multiple Widgets
+              </span>
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/game.svg" alt="game" />
+                Gamification
+              </span>
+              <span class="flex flex-row gap-4 justify-center items-center">
+                <img src="/Images JS/whatsapp.svg" alt="whatsapp" />
+                WhatsApp Communication Channels
+              </span>
+            </div>
+            <div class="flex flex-row gap-2 items-center m-auto">
+              <p class="text-[#255D50] font-medium">
+                View Feature list / Roadmap
+              </p>
+              <img class="inline" src="/Images JS/arrow-circle.svg" alt="arrow" />
+            </div>
+          </div>
+          <div
+            class="section-6 flex flex-col justify-between items-center gap-20 px-5 lg:px-32 lg:py-20 bg-[#233223] lg:bg-inherit"
+          >
+            <div
+              class="grid lg:gap-10 grid-cols-1 lg:grid-cols-2 w-[100%] bg-[#233223] lg:rounded-2xl"
+            >
+              <div class="lg:px-12 py-12">
+                <h2 class="font-semibold tracking-[-0.03em]">
+                  <span class="text-[#11C770]">It’s Easy</span>
+                  <span class="text-white"> to Get Started</span>
+                </h2>
+                <button
+                  class="green-button bg-[#11C770] font-medium text-sm text-white my-5 px-5 py-3 rounded-md"
+                >
+                  Connect Your Shopify Store
+                </button>
+                <img class="py-5" src="/Images JS/component-3.svg" alt="steps" />
+              </div>
+              <div
+                class="flex flex-col justify-between items-center gap-5 bg-white text-center sign-up rounded-xl lg:mx-8 my-8 p-7"
+              >
+                <h3 class="text-[#255D50] font-bold tracking-[-0.02em]">
+                  Create Account
+                </h3>
+                <button
+                  class="flex flex-row justify-center items-center gap-2 bg-[#F7F7F7] rounded-lg p-3"
+                >
+                  <img src="/Images JS/google.svg" alt="google" /> Continue With
+                  Google
+                </button>
+                <button
+                  class="flex flex-row justify-center items-center gap-2 bg-[#4267B2] rounded-lg p-3 text-white"
+                >
+                  <img src="/Images JS/facebook.svg" alt="facebook.svg" /> Continue
+                  With Facebook
+                </button>
+                <p>OR</p>
+                <input
+                  type="email"
+                  class="text-gray-900 border-2 border-[#E6E6E6] rounded-md p-3"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+                <input
+                  type="password"
+                  class="text-gray-900 border-2 border-[#E6E6E6] rounded-md p-3"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <button
+                  class="bg-black text-center rounded-lg p-3 text-white opacity-30"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="section-7 flex flex-col justify-between items-center gap-8 pt-32"
+          >
+            <div class="text-center px-5 pb-8 lg:px-32">
+              <h2 class="lg:text-6xl font-semibold tracking-[-0.03em]">
+                We love our customers &
+              </h2>
+              <span class="text-base lg:text-2xl font-normal"
+                >their customers love them</span
+              >
+            </div>
+          </div>
+          <div class="section-8 swiper px-5 lg:px-0 lg:pl-32">
+            <div class="hidden lg:block">
+              <button class="carousel-prev bg-white rounded-full mr-2 my-5">
+                <img
+                  class="p-5 rounded-full"
+                  src="/Images JS/arrow-left.svg"
+                  alt="arrow left"
+                />
+              </button>
+              <button class="carousel-next bg-white rounded-full ml-2 my-5">
+                <img
+                  class="p-5 rounded-full"
+                  src="/Images JS/arrow-right.svg"
+                  alt="arrow right"
+                />
+              </button>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+              <div class="swiper-slide bg-white rounded-3xl p-6 lg:p-10">
+                <img
+                  src="/Images JS/quote.svg"
+                  class="w-[32px] lg-[43px]"
+                  alt="quote"
+                />
+                <p
+                  class="text-base lg:text-xl font-medium lg:tracking-[0.03em] leading-relaxed pt-4 pb-10"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus placerat, lectus sit amet vehicula congue, orci urna
+                  mollis sapien, id ullamcorper urna odio sed mauris.
+                </p>
+                <p class="text-sm lg:text-base font-normal">Bob Belcher</p>
+                <p class="text-sm mt-2 font-normal opacity-50">
+                  Founder, Bob’s Warehouse
+                </p>
+              </div>
+            </div>
+            <div class="text-center lg:hidden">
+              <button class="carousel-prev bg-white rounded-full mr-2 my-5">
+                <img
+                  class="p-5 rounded-full"
+                  src="/Images JS/arrow-left.svg"
+                  alt="arrow left"
+                />
+              </button>
+              <button class="carousel-next bg-white rounded-full ml-2 my-5">
+                <img
+                  class="p-5 rounded-full"
+                  src="/Images JS/arrow-right.svg"
+                  alt="arrow right"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="section-9 flex flex-col justify-between items-center gap-8 px-5 lg:px-32 pb-32"
+          >
+            <div class="grid gap-10 lg:gap-20 grid-cols-2 lg:grid-cols-3 mt-20">
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+              <img src="/Images JS/RBL Bank.svg" alt="" />
+            </div>
+          </div>
+        </main>
+        <footer>
+          <nav
+            class="flex flex-col lg:flex-row justify-between lg:items-center text-sm font-normal px-5 lg:px-32 py-5 gap-x-8"
+          >
+            <div class="lg:basis-2/6">
+              <img
+                class="basis-1/4 w-auto"
+                src="/Images JS/footer-logo.svg"
+                alt="footer-logo"
+              />
+            </div>
+            <div class="lg: basis-4/6">
+              <div
+                class="flex flex-row justify-between lg:justify-end lg:items-end"
+              >
+                <span class="lg:mx-7 my-7 lg:my-1 p-1">We are hiring!</span>
+                <span class="lg:mx-7 my-7 lg:my-1 p-1">Techmonk</span>
+                <span class="hidden lg:inline lg:mx-7 my-7 lg:my-1 p-1"
+                  >We are hiring!</span
+                >
+                <span class="lg:mx-7 my-7 lg:my-1 p-1">Techmonk</span>
+              </div>
+            </div>
+          </nav>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    var item = document.getElementById("section-3-hover");
+    var bgFadeUP2 = document.getElementById("bgFadeUP-2");
+    var bgFadeUP3 = document.getElementById("bgFadeUP-3");
+    item.onmouseenter = function () {
+      bgFadeUP2.classList.add("hovered-1");
+      bgFadeUP3.classList.add("hovered-2");
+    };
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      grabCursor: true,
+      navigation: {
+        prevEl: ".carousel-prev",
+        nextEl: ".carousel-next",
+      },
+    });
+    function handleCheck(checkbox) {
+      var menuContent = document.getElementById("menu-content");
+      var menuLines = document.getElementsByClassName("menu-lines");
+      console.log(menuContent, menuLines);
+      if (checkbox.checked == true) {
+        menuContent.style.transform = "none";
+        for (var i = 0; i < menuLines.length; i++) {
+          menuLines.item(i).style.background = "white";
+        }
+        document.getElementById("html").classList.add("lock-scroll");
+        document.getElementById("body").classList.add("lock-scroll");
+      } else {
+        menuContent.style.transform = "translate(100%, 0)";
+        for (var i = 0; i < menuLines.length; i++) {
+          menuLines.item(i).style.background = "black";
+        }
+        document.getElementById("html").classList.remove("lock-scroll");
+        document.getElementById("body").classList.remove("lock-scroll");
+      }
+    }
+  </script>
+</html>

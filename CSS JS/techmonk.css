@@ -1,0 +1,425 @@
+html {
+  overflow: hidden;
+  animation: showMain 0.5s linear 3s forwards;
+}
+
+.lock-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes showMain {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  background-color: #f5f5f5;
+  animation: fadeout 0.5s ease 3s forwards;
+  /* Animations */
+}
+
+.loader #counter {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  height: 1em;
+  overflow: hidden;
+}
+
+.loader #counter .digits {
+  float: left;
+  list-style-type: none;
+  line-height: 1em;
+  animation-fill-mode: forwards;
+}
+
+.loader #counter .luckie1 {
+  animation: luckie1 0.25s ease 3.75s 1 forwards;
+  animation-duration: 0.22s;
+  animation-delay: 1.8s;
+  animation-name: luckie1;
+  animation-timing-function: ease;
+}
+
+.loader #counter .luckie2 {
+  animation: luckie2 2s linear 0 1 forwards;
+  animation-duration: 2s;
+  animation-name: luckie2;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.loader #counter .luckie3 {
+  animation: luckie3 0.2s linear 0 1 forwards;
+  animation-duration: 0.2s;
+  animation-name: luckie3;
+  animation-iteration-count: 9;
+  animation-timing-function: linear;
+}
+
+@keyframes luckie1 {
+  100% {
+    margin-top: -1em;
+  }
+}
+
+@keyframes luckie2 {
+  100% {
+    margin-top: -10em;
+  }
+}
+
+@keyframes luckie3 {
+  100% {
+    margin-top: -10em;
+  }
+}
+
+@keyframes fadeUP {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+header nav {
+  opacity: 0;
+  font-family: "Satoshi", sans-serif;
+  font-size: 0.875rem;
+  /* 14px */
+  font-weight: 500;
+  animation: fadeUP 0.5s linear 4s forwards;
+}
+
+main {
+  font-family: "General Sans", sans-serif;
+}
+
+main h1 {
+  font-size: 1.875rem;
+  /* 30px */
+}
+
+main h2 {
+  font-size: 1.875rem;
+  /* 30px */
+}
+
+main h3 {
+  font-size: 1.5rem;
+  /* 24px */
+}
+
+main .green-button,
+main .sign-up {
+  font-family: "Satoshi", sans-serif;
+}
+
+main .section-1 {
+  z-index: -1;
+}
+
+main .section-1 h1 {
+  opacity: 0;
+  animation: fadeUP 0.8s ease-in-out 5s forwards;
+}
+
+main .section-1 .dot {
+  background-color: #cccccc;
+  animation: wave 1s linear infinite;
+}
+
+main .section-1 .dot:nth-child(2) {
+  animation-delay: -0.6s;
+}
+
+main .section-1 .dot:nth-child(3) {
+  animation-delay: -0.2s;
+}
+
+main .section-1 p {
+  opacity: 0;
+  animation: fadeUP 0.8s ease-in-out 5.1s forwards;
+}
+
+main .section-1 .fadeUP {
+  opacity: 0;
+  animation: fadeUP 0.8s ease-in-out 5.2s forwards;
+}
+
+main .section-1 .component-1 {
+  opacity: 0;
+  animation: component-1 0.8s ease-in-out 6s forwards;
+}
+
+main .section-1 .component-1 img {
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: top right;
+  animation: component-img 1s ease-in-out 7.8s forwards;
+}
+
+main .section-1 .component-2 {
+  opacity: 0;
+  animation: component-2 0.8s ease-in-out 6s forwards;
+}
+
+main .section-1 .component-2 img {
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: top left;
+  animation: component-img 1s ease-in-out 8.8s forwards;
+}
+
+main .section-1 .font-medium {
+  font-size: 1.125rem;
+  /* 18px */
+}
+
+main .section-1 .font-small {
+  font-size: 1rem;
+  /* 16px */
+}
+
+main .section-4 {
+  background: linear-gradient(to bottom, #f5f5f5 60%, #eceeee 40%);
+}
+
+main .section-4 img {
+  display: inline;
+}
+
+main .section-6 .sign-up button,
+main .section-6 .sign-up input {
+  width: 100%;
+}
+
+@keyframes component-1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(140%, 50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(140%, 5px, 0);
+  }
+}
+
+@keyframes component-2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(-130%, 50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-130%, 5px, 0);
+  }
+}
+
+@keyframes component-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main h1 {
+    font-size: 3.75rem;
+    /* 60px */
+  }
+  main h2 {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+  main h3 {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+  .section-8 .swiper-slide {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 #bgFadeUP-1 {
+    opacity: 0;
+    width: 100%;
+    height: 728px;
+    background: url("/public/section-1.svg") no-repeat center center;
+    animation: fadeUP 0.8s ease-in-out 6s forwards;
+  }
+  .section-2 {
+    background: url("/public/section-2.svg") no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .section-2 .speaking {
+    opacity: 0;
+    transform: rotate(5deg);
+    transform-origin: top left;
+  }
+  .section-2 .speaking:hover {
+    animation: rotate 0.1s linear forwards;
+  }
+  .section-3 #bgFadeUP-2,
+  .section-3 #bgFadeUP-3 {
+    opacity: 0;
+  }
+  .section-3 #bgFadeUP-2 {
+    width: 100%;
+    height: 584px;
+    background: url("/public/section-3a.svg") no-repeat center center;
+  }
+  .section-3 #bgFadeUP-3 {
+    width: 100%;
+    height: 584px;
+    background: url("/public/section-3b.svg") no-repeat center center;
+  }
+  .section-3 .hovered-1 {
+    animation: fadeUP 0.3s linear 0.1s forwards;
+  }
+  .section-3 .hovered-2 {
+    animation: fadeUP 0.3s linear 0.5s forwards;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0.8;
+    transform: rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+  30% {
+    background-color: #909090;
+  }
+}
+
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu #menu-content {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu-box input {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 20;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.menu-box input:checked ~ .menu-lines {
+  opacity: 1;
+  background: black;
+}
+
+.menu-box input:checked ~ .menu-lines.line1 {
+  top: 1px;
+  transform: rotate(45deg);
+}
+
+.menu-box input:checked ~ .menu-lines.line2 {
+  transform: scaleY(0);
+}
+
+.menu-box input:checked ~ .menu-lines.line3 {
+  bottom: 1px;
+  transform: rotate(-45deg);
+}
+
+.menu-box input .test {
+  transform: none;
+}
+
+.menu-box .menu-lines.line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.menu-box .menu-lines.line2 {
+  transition: transform 0.2s ease;
+}
+
+.menu-box .menu-lines.line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.menu-box .menu-lines {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  margin: 6px;
+  background: black;
+  border-radius: 3px;
+  z-index: 10;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu-box .menu-lines:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menu-box .menu-lines:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
